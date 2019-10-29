@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3属性测试</title>
+	<link rel="stylesheet" href="css3.css">
+	<style>
+	</style>
+</head>
+<body>
+<!-- 1.使用图像作为边框 -->
+
+<div class="round">这里，图像平铺（重复）来填充该区域。</div>
+<br>
+<div class="stretch">这里，图像被拉伸以填充该区域。</div>
+<hr>
+
+<!-- 2.css3背景 -->
+<div class="example1">
+<h1>Lorem Ipsum Dolor</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<div class="example2">
+<h1>Lorem Ipsum Dolor</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<!-- 3.CSS3的background-Origin属性 -->
+<!-- border-box就是把背景图片的坐标原点设置在盒模型border-box区域的左上角
+	 padding-box就是把背景图片的坐标原点设置在盒模型padding-box区域的左上角
+	 content-box就是把背景图片的坐标原点设置在盒模型content-box区域的左上角 -->
+<p>背景图像边界框的相对位置：</p>
+<div id="div1">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</div>
+
+<p>背景图像的相对位置的内容框：</p>
+<div id="div2">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</div>
+
+<!-- 4.background-clip属性 -->
+<p>没有背景剪裁 (border-box没有定义):</p>
+<div id="ex1">
+<h2>Lorem Ipsum Dolor</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+
+<p>background-clip: padding-box:</p>
+<div id="ex2">
+<h2>Lorem Ipsum Dolor</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+
+<p>background-clip: content-box:</p>
+<div id="ex3">
+<h2>Lorem Ipsum Dolor</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+<hr>
+
+<!-- 5.css3渐变 -->
+<!--线性渐变（Linear Gradients）- 向下/向上/向左/向右/对角方向 -->
+<h3>线性渐变 - 从上到下</h3>
+<p>从顶部开始的线性渐变。起点是红色，慢慢过渡到蓝色：</p>
+<div id="grad1"></div>
+<p><strong>注意：</strong> Internet Explorer 9 及之前的版本不支持渐变。</p>
+
+
+<h3>线性渐变 - 从左到右</h3>
+<p>从左边开始的线性渐变。起点是红色，慢慢过渡到蓝色：</p>
+<div id="grad2"></div>
+
+<h3>线性渐变 - 对角</h3>
+<p>从左上角开始（到右下角）的线性渐变。起点是红色，慢慢过渡到黑色：</p>
+<div id="grad3"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>上中下布局</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			list-style: none;
+		}
+
+		body {
+			background-color: #DDD;
+		}
+
+		/*1.top*/
+		.top {
+			width: 100%;
+			height: 80px;
+			background-color: #000;
+		}
+
+		.top .nav {
+			width: 90%;
+			height: 80px;
+			margin: 0 auto;
+
+		}
+
+		.nav .nav-left {
+			width: 200px;
+			height: 50px;
+			background-color: #646464;
+			position: relative;
+			top: 15px;
+			left: 0;
+			float: left;
+			margin-right: 30px;
+
+		}
+
+		.flex-container {
+			display: flex;
+			flex-direction: row;
+			white-space: nowrap;
+		}
+
+		.nav-right ul {
+			min-width: 300px;
+		}
+
+		.nav-right li {
+			float: left;
+			color: #fff;
+			padding: 0 30px;
+			line-height: 80px;
+
+
+		}
+
+
+		.active {
+			background-color: #0099FF;
+
+		}
+
+		/*2.body*/
+		.body {
+			width: 100%;
+			height: 560px;
+
+		}
+
+		.body .list {
+			width: 90%;
+			height: 60px;
+			margin: 0 auto;
+
+		}
+
+		.list li {
+			float: left;
+			line-height: 60px;
+			margin: 0 10px;
+			color: #646464;
+		}
+
+		.list .first {
+			margin-left: 0;
+		}
+
+		.list .last {
+			color: black;
+		}
+
+		.body .content {
+			width: 90%;
+			height: 400px;
+			background-color: #fff;
+			margin: 0 auto;
+		}
+
+		.content span {
+			display: inline-block;
+			margin: 50px 30px;
+		}
+
+		.body .footer {
+			width: 90%;
+			height: 100px;
+			margin: 0 auto;
+		}
+
+		.footer span {
+			display: block;
+			line-height: 100px;
+			text-align: center
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 1.top -->
+	<div class="top">
+		<div class="nav">
+			<div class="nav-left"></div>
+			<div class="flex-container  nav-right">
+				<ul>
+					<li class="flex-item active">nav 1</li>
+					<li class="flex-item">nav 2</li>
+					<li class="flex-item">nav 3</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 2.body -->
+	<div class="body">
+		<div class="list">
+			<ul>
+				<li class="first">Home</li>
+				<li>/</li>
+				<li>List</li>
+				<li>/</li>
+				<li class="last">App</li>
+			</ul>
+		</div>
+		<div class="content">
+			<span>Content</span>
+		</div>
+
+		<div class="footer">
+			<span>Design &copy;2019 Created by zhaokun</span>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>顶部菜单</title>
+	<link rel="stylesheet" href="./font/iconfont.css">
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+
+		}
+
+		.top {
+			min-width: 1280px;
+			height: 80px;
+			background-color: rgb(51, 148, 210);
+			color: white;
+			font-weight: bold;
+			display: flex;
+			flex-direction: row;
+			/* 使用nowrap达到控制容器内字体不自动换行的目的 */
+			white-space: nowrap;
+
+		}
+
+		.box {
+			height: 80px;
+			text-align: center;
+			flex: 1;
+		}
+
+		.box div {
+			height: 40px;
+			line-height: 50px;
+		}
+
+		.box span {
+			height: 40px;
+			line-height: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="top">
+		<div class="iconfont box">
+			<div>&#xe609;</div><span>会员开卡</span>
+		</div>
+		<div class="iconfont box">
+			<div>&#xe645;</div><span>会员充值</span>
+		</div>
+		<div class="iconfont box">
+			<div>&#xe63d;</div><span>会员查询</span>
+		</div>
+		<div class="iconfont box">
+			<div>&#xe6a7;</div><span>补卡换卡</span>
+		</div>
+		<div class="iconfont box">
+			<div>&#xe61a;</div><span>退卡销户</span>
+		</div>
+		<div class="iconfont box">
+			<div>&#xe692;</div><span>挂失启用</span>
+		</div>
+		<div class="iconfont box">
+			<div>&#xe61f;</div><span>营业明细</span>
+		</div>
+		<div class="iconfont box">
+			<div>&#xe6ac;</div><span>发卡充值明细</span>
+		</div>
+		<div class="iconfont box">
+			<div>&#xe607;</div><span>品项销售明细</span>
+		</div>
+		<div class="iconfont box">
+			<div>&#xe611;</div><span>营业日结</span>
+		</div>
+		<div class="iconfont box">
+			<div>&#xe638;</div><span>退出登录</span>
+		</div>
+
+	</div>
+</body>
+
+</html>

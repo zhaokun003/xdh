@@ -1,0 +1,96 @@
+/*1.使用图像作为边框*/
+.round{
+	border:15px solid transparent;
+	width:250px;
+	padding:10px 20px;
+	-webkit-border-image:url(border.png) 30 30 round; /* Safari 5 and older */
+	-o-border-image:url(border.png) 30 30 round; /* Opera */
+	border-image:url(border.png) 30 30 round;
+}
+
+.stretch{
+	border:15px solid transparent;
+	width:250px;
+	padding:10px 20px;
+	-webkit-border-image:url(border.png) 30 30 stretch; /* Safari 5 and older */
+	-o-border-image:url(border.png) 30 30 stretch; /* Opera */
+	border-image:url(border.png) 30 30 stretch;
+}
+
+/*2.css3背景*/
+.example1{
+	background: url(1.jpg), url(border.png) ;
+	background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+}
+
+.example2{
+	background: url(1.jpg) no-repeat;
+	background-size:100%;
+}
+
+/*3.CSS3的background-Origin属性*/
+#div1{
+	border:1px solid black;
+	padding:100px;
+	background-image:url(1.jpg);
+	background-repeat:no-repeat;
+	background-position:left;
+	background-origin:border-box;
+}
+#div2
+{
+	border:1px solid black;
+	padding:100px;
+	background-image:url(1.jpg);
+	background-repeat:no-repeat;
+	background-position:left;
+	background-origin:content-box;
+}
+
+/*4.background-clip属性*/
+#ex1 {
+    border: 10px dotted black;
+    padding:35px;
+    background: yellow;
+}
+
+#ex2 {
+    border: 10px dotted black;
+    padding:35px;
+    background: yellow;
+    background-clip: padding-box;
+}
+
+#ex3 {
+    border: 10px dotted black;
+    padding:35px;
+    background: yellow;
+    background-clip: content-box;
+}
+
+/*5.渐变*/
+#grad1 {
+    height: 200px;
+	background-color: red; /* 浏览器不支持时显示 */
+    background-image: linear-gradient(#e66465, #9198e5);
+}
+#grad2 {
+    height: 200px;
+    background-color: red; /* 不支持线性的时候显示 */
+    background-image: linear-gradient(to right, red , yellow);
+}
+
+#grad3 {
+    height: 200px;
+    background-color: red; /* 不支持线性的时候显示 */
+    background-image: linear-gradient(to bottom right, red , black);
+}
+
+#grad4 {
+    height: 150px;
+    width: 200px;
+    background-color: red; /* 浏览器不支持的时候显示 */
+    background-image: radial-gradient(red, green, blue); /* 标准的语法（必须放在最后） */
+}

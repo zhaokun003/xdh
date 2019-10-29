@@ -1,0 +1,260 @@
+      <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>列表</title>
+	<style>
+		li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		body,
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		.flex-container {
+
+			display: flex;
+
+			flex-direction: column;
+			width: 100%;
+		
+
+			background-color: #fff;
+		}
+
+		.flex-item {
+			background-color: #fff;
+			width: 100%;
+			flex: 1;
+		}
+
+		.text {
+			width: 100%;
+			height: 80px;
+			margin: 0 auto;
+			border-bottom: 1px solid rgb(228, 228, 288);
+			display: flex;
+			flex-direction: row;
+
+		}
+
+		.pic {
+			float: left;
+			position: relative;
+		}
+
+
+		.pic img {
+			width: 60px;
+			height: 60px;
+			margin: 10px 0;
+		}
+
+		.pic .round {
+			height: 10px;
+			width: 10px;
+			border-radius: 100%;
+			background-color: red;
+			position: absolute;
+			top: 5px;
+			right: -5px;
+
+		}
+
+		.content {
+
+			height: 60px;
+			margin: 10px 0;
+			float: left;
+
+			flex-grow: 1;
+
+			overflow: hidden;
+			/*超出部分隐藏*/
+			white-space: nowrap;
+			/*不换行*/
+			/* text-overflow: ellipsis; */
+			/*超出部分文字以...显示*/
+		}
+
+		.content-top {
+
+			height: 30px;
+		}
+
+		.content-bottom {
+			height: 30px;
+			font-size: 14px;
+			margin-left: 10px;
+			line-height: 40px;
+			color: rgb(174, 174, 174);
+
+			overflow: hidden;
+			/*超出部分隐藏*/
+			white-space: nowrap;
+			/*不换行*/
+			text-overflow: ellipsis;
+			/*超出部分文字以...显示*/
+
+		}
+
+		.content ul .first {
+			float: left;
+			margin: 0 10px;
+			font-weight: bold;
+
+		}
+
+		.content ul .last {
+			color: rgb(170, 170, 170);
+			float: right;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="flex-container">
+		<div class="flex-item">
+			<div class="text">
+				<div class="pic">
+					<img src="./img/1.gif">
+					<div class="round"></div>
+				</div>
+
+				<div class="content">
+					<div class="content-top">
+						<ul>
+							<li class="first">人民网</li>
+							<li class="last">16:21</li>
+						</ul>
+					</div>
+
+					<div class="content-bottom">
+						<span>[2条][链接]当年"三进下党",习近平给乡亲们回信了!</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex-item">
+			<div class="text">
+				<div class="pic">
+					<div class="round"></div>
+					<img src="./img/1.gif">
+				</div>
+
+				<div class="content">
+					<div class="content-top">
+						<ul>
+							<li class="first">微信开发者</li>
+							<li class="last">16:20</li>
+						</ul>
+					</div>
+
+					<div class="content-bottom">
+						<span>[链接]开发者培训班!</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex-item">
+			<div class="text">
+				<div class="pic">
+					<div class="round"></div>
+					<img src="./img/1.gif">
+				</div>
+
+				<div class="content">
+					<div class="content-top">
+						<ul>
+							<li class="first">新华社</li>
+							<li class="last">16:00</li>
+						</ul>
+					</div>
+
+					<div class="content-bottom">
+						<span>[链接]中国人民银行关于美国财政部将中国列为"汇率操作国家"</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex-item">
+			<div class="text">
+				<div class="pic">
+					<div class="round"></div>
+					<img src="./img/1.gif">
+				</div>
+
+				<div class="content">
+					<div class="content-top">
+						<ul>
+							<li class="first">人民日报</li>
+							<li class="last">15:21</li>
+						</ul>
+					</div>
+
+					<div class="content-bottom">
+						<span>[5条][链接]国务院港澳办:已有461人在暴力冲突中受伤</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex-item">
+			<div class="text">
+				<div class="pic">
+					<div class="round"></div>
+					<img src="./img/1.gif">
+				</div>
+
+				<div class="content">
+					<div class="content-top">
+						<ul>
+							<li class="first">微路况</li>
+							<li class="last">12:21</li>
+						</ul>
+					</div>
+
+					<div class="content-bottom">
+						<span>[3条][链接]转朱阁，低绮户，照无眠。不应有恨，何事长向别时圆？人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共婵娟。</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex-item">
+			<div class="text">
+				<div class="pic">
+					<div class="round"></div>
+					<img src="./img/1.gif">
+				</div>
+
+				<div class="content">
+					<div class="content-top">
+						<ul>
+							<li class="first">微店客户服务</li>
+							<li class="last">10:01</li>
+						</ul>
+					</div>
+
+					<div class="content-bottom">
+						<span>[链接]极品!爆甜!新川中岛水蜜桃来了!</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

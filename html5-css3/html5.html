@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5新属性测试</title>
+</head>
+<body>
+ <!-- 1. <datalist> 表单元素标签 -->
+	<form action="" method="">
+    <input list="browsers" >
+    <datalist id="browsers">
+	  <option value="Internet Explorer">
+	  <option value="Firefox">
+	  <option value="fox">
+	  <option value="Chrome">
+	  <option value="Opera">
+	  <option value="Safari">
+      </datalist>
+<input type="submit">
+</form>
+<p><strong>注意:</strong>1.功能相当于搜索提示,如果数据库里有这条数据了，就会进行模糊查询显示出来，如果没有的话就获取当前输入的内容;<br>2.datalist的id一定要和input 的list属性的值一致;<br>
+3.Internet Explorer 9（更早 IE 版本），Safari 不支持 datalist 标签。</p>
+<hr>
+
+<!-- 2.HTML <section> 标签 -->
+<section>
+<h1>WWF</h1>
+<p>The World Wide Fund for Nature (WWF) is....</p>
+</section>
+<p><strong>注意:</strong>section用于强调某一个模块，强调模块本身是作为一个整体的.可以使用，比如页面里的导航菜单、文章正文、文章的评论等</p>
+<hr>
+
+<!-- 3.HTML <article> 标签 -->
+<article>
+  <h1>Internet Explorer 9</h1>
+  <p> Windows Internet Explorer 9(缩写为 IE9 )在2011年3月14日21:00 发布。</p>
+</article>
+<p><strong>注意:</strong>article用于强调某一段独立的内容，强调内容的独立性。它可以是一篇博客或报刊中的文章、一篇论坛帖子、一段用户评论或独立的插件，或其他任何独立的内容。</p>
+<hr>
+
+<!-- 4.HTML <aside> 标签 -->
+<p>php中文网原创《独孤九贱》</p>
+<aside>
+    <h4>《独孤九贱》</h4>
+    php中文网原创出品：php中文网原创《独孤九贱》系列课程，课程以恶搞，段子为主题风格！轻松的教学风格，简短的教学模式，让同学们在不知不觉中，学会了php！
+</aside>
+<p><strong>注意:</strong>aside 的内容可用作文章的侧栏,内容应该与附近的内容相关.</p>
+<hr>
+
+<!-- 5.HTML <progress> 标签 -->
+下载进度：
+<progress value="22" max="100"></progress>
+<p><strong>注意：</strong> IE 9 或者更早版本的 IE 浏览器不支持 progress 标签。</p>
+<hr>
+
+<!-- 6.<form> / <input> autocomplete 属性 -->
+<form action="demo-form.php" autocomplete="on">
+  First name:<input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  E-mail: <input type="email" name="email" autocomplete="off"><br>
+  <input type="submit">
+</form>
+<p><strong>注意:</strong>填写并提交表单，然后重新刷新页面会记录之前的输入。</p>
+<p>form 的 autocomplete 属性为  "on"（开），但是 e-mail 自动为“off”（关）。</p>
+<hr>
+
+<!-- 7.<form> novalidate 属性 -->
+<form action="demo-form.php" novalidate>
+E-mail: <input type="email" name="user_email">
+<input type="submit">
+</form>
+<p><strong>注意:</strong>用来阻止提交表单前的验证.(可以不是email格式)</p>
+
+</body>
+</html>

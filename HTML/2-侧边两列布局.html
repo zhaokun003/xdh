@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>侧边两列布局</title>
+	<link rel="stylesheet" href="./font/iconfont.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			list-style: none;
+		}
+
+		.center {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+
+		}
+
+		.center .left {
+			height: 600px;
+			background-color: #000;
+			position: relative;
+			float: left;
+
+
+		}
+
+		.left .left-top {
+			width: 80%;
+			height: 40px;
+			background-color: #646464;
+			position: absolute;
+			top: 30px;
+			left: 18px;
+
+		}
+
+		.left-bottom ul {
+			padding: 100px 0;
+
+		}
+
+		.left-bottom li {
+			color: #fff;
+			padding: 15px 50px;
+			font-size: 20px;
+		}
+
+		.left-bottom .first {
+			background-color: #0099FF;
+		}
+
+		/*右侧*/
+		.center .right {
+			width: 20%;
+			height: 100px;
+			float: right;
+			flex-grow: 1;
+
+		}
+
+		.right-top span {
+			margin: 40px;
+			line-height: 100px;
+
+		}
+
+		.right-bottom {
+			height: 500px;
+			width: 100%;
+			background-color: #DDD;
+			float: right;
+		}
+
+		.right-bottom .content {
+			width: 95%;
+			height: 400px;
+			background-color: #fff;
+
+			margin: 50px auto;
+		}
+
+		.content span {
+			display: inline-block;
+			margin: 50px 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="center">
+		<div class="left">
+			<div class="left-top"></div>
+			<div class="left-bottom">
+				<ul>
+					<li class="iconfont first">&#xe609; &nbsp; nav 1</li>
+					<li class="iconfont">&#xec59; &nbsp; nav 2</li>
+					<li class="iconfont">&#xe71e; &nbsp; nav 3</li>
+				</ul>
+			</div>
+		</div>
+		<div class="right">
+			<div class="right-top">
+				<span class="iconfont">&#xe600;</span>
+			</div>
+			<div class="right-bottom">
+				<div class="content">
+					<span>Content</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+li{
+    list-style-type:none;
+}
+
+body{
+    width: 100%;
+}
+
+.chat{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    // 顶部
+    .chat-top{
+        width: 100%;
+        height: 50px;
+        background-color: #ececec;
+        margin: 0 auto; 
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top:0;
+        left:0;        
+
+        .chat-top-left{
+			flex: 10;
+            span{
+                line-height: 50px;
+                margin-left:20px ;
+            }
+        }
+        .chat-top-mid{
+			flex: 1;
+            span{
+                display: block;
+                text-align: center;
+                line-height: 50px;
+                font-size: 20px;
+            }
+        }
+        .chat-top-right{
+			flex: 1;
+            span{
+                display: block;
+                text-align: center;
+                line-height: 50px;
+                font-size: 20px;
+            }
+        }
+
+    }
+    // 内容
+    .content{
+        width: 100%;
+        margin: 0 auto;
+
+        .kongbai {
+            height: 50px;
+        }
+
+        .content-box{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            
+           .content-box-left{
+                width: 60px;
+                height: 60px;
+                float: left;
+                margin:10px 20px;
+     
+                img{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 5px;
+                }
+           }
+
+           .content-box-right{
+               
+                height: 70px;
+                margin: 10px 0;
+                float: left;
+                border-bottom: 1px solid rgb(170, 170, 170);
+                flex-grow: 1;
+                overflow: hidden;
+               /*超出部分隐藏*/
+                white-space: nowrap;
+
+               .content-t{
+                   height: 30px;
+                   line-height: 30px;
+
+                   .first{
+                    float: left;
+                    color:#1d1d1d;
+                
+                    font-weight: bold;
+                   }
+
+                   .last{
+                       margin-right:20px;
+                    color: rgb(170, 170, 170);
+                    float: right;
+
+                   }
+               }
+
+               .content-b{
+                height: 30px;
+                font-size: 14px;
+               
+                line-height: 30px;
+                color: #AAA;
+    
+                overflow: hidden;
+                /*超出部分隐藏*/
+                white-space: nowrap;
+                /*不换行*/
+                text-overflow: ellipsis;
+                /*超出部分文字以...显示*/
+
+                    
+               }
+           }
+
+        }
+    }
+
+    
+
+    // 底部
+    .footer{
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: #f7f7f7;
+        margin: 0 auto;
+        left:0;
+        bottom: 0;
+
+        display: flex;
+		flex-direction: row;
+
+        .chat-footer-1{
+            color:green;
+        }
+       
+        .footer-box{
+            flex:1;
+            // text-align: center;
+            line-height: 8px;
+            font-size:14px;
+
+            .iconfont{
+            font-size:20px;
+            line-height: 35px;
+            
+            }
+            span{
+                text-align: center;
+
+            }
+        }
+       
+    }
+}

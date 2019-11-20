@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+li{
+    list-style-type:none;
+}
+
+body{
+    width: 100%;
+
+}
+
+.chat{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    // 顶部
+    .chat-top{
+        width: 100%;
+        height: 50px;
+        background-color: #ececec;
+        z-index: 99;
+        margin: 0 auto; 
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top:0;
+        left:0;        
+
+        .chat-top-left{
+            cursor: pointer;
+			flex: 10;
+            span{
+                line-height: 50px;
+                margin-left:20px ;
+            }
+        }
+        .chat-top-mid{
+			flex: 1;
+            span{
+                display: block;
+                text-align: center;
+                line-height: 50px;
+                font-size: 20px;
+            }
+        }
+        .chat-top-right{
+			flex: 1;
+            span{
+                display: block;
+                text-align: center;
+                line-height: 50px;
+                font-size: 20px;
+            }
+        }
+
+    }
+    // 内容
+    .content{
+        width: 100%;
+        margin: 0 auto;
+
+        background-color: rgb(215, 214, 214);
+
+        .kongbai {
+            height: 50px;
+        }
+
+        .time{
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #AAA;
+        }
+
+        .content-box{
+            width: 100%;
+            // height: 80px;
+            display: flex;
+            flex-direction: row;
+            
+           .content-box-left{
+                width: 40px;
+                height: 40px;
+                float: left;
+                margin:10px 10px;
+     
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 5px;
+                }
+           }
+
+           .content-box-right{
+               
+                height: 40px;
+                margin: 10px 0;
+                float: left;
+           
+                flex-grow: 1;
+                overflow: hidden;
+               /*超出部分隐藏*/
+                white-space: nowrap;
+
+              
+           }
+
+        }
+    }
+
+    
+
+    // 底部
+    .footer{
+        
+        width: 100%;
+        height: 50px;
+        background-color: #f7f7f7;
+        margin: 0 auto;
+        position: fixed;
+        left:0;
+        bottom: 0;
+        z-index: 99;
+        display: flex;
+		flex-direction: row;
+
+        .iconfont{
+            font-size:25px;
+        }
+        .footer-left{
+            flex:1;
+            line-height: 50px;
+            text-align: center;
+            margin:0 10px;
+        }
+
+        .footer-mid{
+            width: 300px;
+            height: 30px;
+            background-color: #fff;
+            flex:11;
+            margin-right:10px;
+            margin-top:10px;
+            
+
+        }
+
+        .footer-right{
+            flex:1;
+            line-height: 50px;
+            text-align: center;
+            margin-right: 10px;
+
+        }
+       
+    }
+}
+
+// 左边对话框
+.content-t{
+    height: 40px;
+    // position: relative;
+
+    .myDiv{
+    display: inline-block;
+    height:40px;
+    background-color:#fff;
+    border-radius:5px;
+    margin-left:10px;
+    // position: relative;
+   
+        .innerDiv{
+            margin-left:-7px;
+            
+            width:0;
+            height:0;
+            border-top:10px solid transparent;
+            border-bottom:10px solid transparent;
+            border-right:10px solid #fff;
+            float: left;
+            position: relative;
+            left:0;
+            top:10px;    
+        }
+
+        .mP{
+            line-height: 40px;
+            padding:0 10px ;
+            text-align: center;
+            font-size:14px;
+      
+        }
+    }
+}
+
+.content-box{
+
+    .picture{
+        margin:10px  ;
+        img{
+            width: 100px;
+        }
+    }
+}
+
+// 右侧发言
+.right-b{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    
+    .content-box-left-x{
+                width: 40px;
+                height: 40px;
+                float: right;
+                margin:10px 10px;
+     
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 5px;
+                }
+    }
+
+    .content-box-right-x{
+          
+        height: 40px;
+        margin: 10px 0;
+        float: right;
+        flex-grow: 1;
+        overflow: hidden;
+       /*超出部分隐藏*/
+        white-space: nowrap;
+
+        .content-t-x{
+            height: 40px;
+        .myDiv-x{
+           
+            display: inline-block;
+            height:40px;
+            background-color:#fff;
+            border-radius:5px;
+            margin-right:10px;
+            float: right;
+
+            .innerDiv-x{
+                margin-left:-7px;
+                z-index:21;
+                width:0;
+                height:0;
+                border-top:10px solid transparent;
+                border-bottom:10px solid transparent;
+                border-left:10px solid #fff;
+                float: right;
+                position: relative;
+                right:-7px;
+                top:10px;    
+            }
+
+            .m-x{
+                line-height: 40px;
+                padding:0 10px ;
+                text-align: center;
+                font-size:14px;
+            }
+        }
+    }
+    }
+
+
+}

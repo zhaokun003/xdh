@@ -1,0 +1,132 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+body {
+  width: 100%; }
+
+.chat {
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+  .chat .chat-top {
+    width: 100%;
+    height: 50px;
+    background-color: #ececec;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0; }
+    .chat .chat-top .chat-top-left {
+      flex: 10; }
+      .chat .chat-top .chat-top-left span {
+        line-height: 50px;
+        font-weight: bold;
+
+        margin-left: 20px; }
+    .chat .chat-top .chat-top-mid {
+      flex: 1; }
+      .chat .chat-top .chat-top-mid span {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px; }
+    .chat .chat-top .chat-top-right {
+      flex: 1; }
+      .chat .chat-top .chat-top-right span {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px; }
+  .chat .content {
+    width: 100%;
+    margin: 0 auto; }
+    .chat .content .kongbai {
+      height: 50px; }
+    .chat .content .content-box {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      flex-direction: row; }
+      .chat .content .content-box .content-box-left {
+        width: 30px;
+        height: 30px;
+        float: left;
+        margin: 10px 20px; }
+        .chat .content .content-box .content-box-left .iconfont {
+          font-size: 30px; }
+      .chat .content .content-box .content-box-right {
+        height: 50px;
+        float: left;
+        flex-grow: 1;
+        overflow: hidden;
+        /*超出部分隐藏*/
+        white-space: nowrap; }
+        .chat .content .content-box .content-box-right .content-t {
+          height: 50px;
+          line-height: 50px;
+          font-size: 16px; }
+          .chat .content .content-box .content-box-right .content-t .iconfont {
+            float: right;
+            margin-right: 10px; }
+    .chat .content .sp {
+      border-bottom: 1px solid #d8d9da;
+    }
+    .chat .content .num {
+      width: 100%;
+      height: 10px;
+      background-color: #ededed; }
+  .chat .footer {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row; }
+    .chat .footer .chat-footer-3 {
+      color: green; }
+
+      .chat .footer .footer-box {
+        flex: 1;
+        /* text-align: center; */
+        line-height: 8px;
+        font-size: 14px; }
+        .chat .footer .footer-box .iconfont {
+          font-size: 25px;
+          line-height: 35px;
+          height: 25px;
+          display: block;
+          text-align: center;
+        }
+  
+        .chat-footer-4 .iconfont{
+          font-size: 20px !important;
+  
+        }
+  
+        .chat .footer .footer-box span {
+          font-size: 12px;
+          /* line-height: 25px; */
+          height: 25px;
+          display: block;
+          text-align: center;
+        }
+
+        .chat-footer-2 span{
+          line-height: 9px;
+      }
+        .chat-footer-3 span{
+          line-height: 9px;
+       
+      }
+
+/*# sourceMappingURL=find.css.map */

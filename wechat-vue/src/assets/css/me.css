@@ -1,0 +1,169 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+body {
+  width: 100%; }
+
+.chat {
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+  .chat .chat-top {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0; }
+    .chat .chat-top .chat-top-right span {
+      float: right;
+      display: block;
+      text-align: center;
+      line-height: 50px;
+      font-size: 20px;
+      margin-right: 12px; }
+  .chat .content {
+    width: 100%;
+    margin: 0 auto; }
+    .chat .content .kongbai {
+      height: 50px; }
+    .chat .content .name {
+      height: 140px;
+      width: 100%;
+      display: flex;
+      flex-direction: row; }
+      .chat .content .name .content-box-left {
+        width: 80px;
+        height: 80px;
+        float: left;
+        margin: 20px; }
+        .chat .content .name .content-box-left img {
+          width: 80px;
+          height: 80px;
+          border-radius: 5px; }
+      .chat .content .name .content-box-right {
+        height: 80px;
+        margin: 20px 0;
+        float: left;
+        flex-grow: 1;
+        overflow: hidden;
+        /*超出部分隐藏*/
+        white-space: nowrap; }
+        .chat .content .name .content-box-right .content-t {
+          height: 50px;
+          font-size: 30px; }
+          .chat .content .name .content-box-right .content-t .first {
+            float: left;
+            color: #1d1d1d;
+            font-weight: bold; }
+          .chat .content .name .content-box-right .content-t .last {
+            margin-right: 20px;
+            
+            color: #aaaaaa;
+            float: right; }
+        .chat .content .name .content-box-right .content-b {
+          height: 30px;
+          font-size: 14px;
+          width: 100%;
+          line-height: 30px;
+          color: #AAA;
+          overflow: hidden;
+          /*超出部分隐藏*/
+          white-space: nowrap;
+          /*不换行*/
+          text-overflow: ellipsis;
+          /*超出部分文字以...显示*/ }
+          .chat .content .name .content-box-right .content-b .code1 {
+            float: right;
+            margin-right: 10px; }
+          .chat .content .name .content-box-right .content-b .code2 {
+            float: right;
+            margin-right: 20px; }
+    .chat .content .content-box {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      flex-direction: row; }
+      .chat .content .content-box .content-box-left {
+        width: 30px;
+        height: 30px;
+        float: left;
+        margin: 10px 20px; }
+        .chat .content .content-box .content-box-left .iconfont {
+          font-size: 30px; }
+      .chat .content .content-box .content-box-right {
+        height: 50px;
+        float: left;
+        flex-grow: 1;
+        overflow: hidden;
+        /*超出部分隐藏*/
+        white-space: nowrap; }
+        .chat .content .content-box .content-box-right .content-t {
+          height: 50px;
+          line-height: 50px;
+          font-size: 16px; }
+          .chat .content .content-box .content-box-right .content-t .iconfont {
+            float: right;
+            margin-right: 10px;
+            color: #AAA; }
+    .chat .content .sp {
+      border-bottom: 1px solid #d8d9da;
+    }
+    .chat .content .num {
+      width: 100%;
+      height: 10px;
+      background-color: #ededed; }
+  .chat .footer {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row; }
+    .chat .footer .chat-footer-4 {
+      color: green; }
+      .chat .footer .footer-box {
+        flex: 1;
+        /* text-align: center; */
+        line-height: 8px;
+        font-size: 14px; }
+        .chat .footer .footer-box .iconfont {
+          font-size: 25px;
+          line-height: 35px;
+          height: 25px;
+          display: block;
+          text-align: center;
+        }
+  
+        .chat-footer-4 .iconfont{
+          font-size: 20px !important;
+  
+        }
+  
+        .chat .footer .footer-box span {
+          font-size: 12px;
+          /* line-height: 25px; */
+          height: 25px;
+          display: block;
+          text-align: center;
+        }
+        .chat-footer-3 span{
+          line-height: 9px;
+       
+      }
+      .chat-footer-2 span{
+        line-height: 9px;
+    }
+
+        
+
+
+/*# sourceMappingURL=me.css.map */
